@@ -35,7 +35,7 @@ html {
 }
 
 #reserve {
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Gabriela', serif;
     font-weight: 700;
     color: #cdcdcd;
     border: solid #ffffff;
@@ -50,7 +50,7 @@ html {
 }
 
 .navbar .nav-item a {
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Gabriela', serif;
     font-weight: 700;
     color: #cdcdcd;
     font-weight: bolder;
@@ -79,4 +79,26 @@ html {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+.carousel-caption {
+    color: #fff;
+    text-align: center;
+    top: 45%;
+    left: 10%;
+    width: 550px;
+    bottom: auto;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.carousel-caption h5 {
+    font-family: 'Gabriela', serif;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-family: 'Gabriela', serif;
+    font-size: 40px;
 }
