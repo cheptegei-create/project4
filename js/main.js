@@ -100,6 +100,6 @@ $(document).ready(() => {
 
 $(document).ready(function() {
     $("#checkOut").onclick(function(event) {
-        alert(name + ", Message received, thank you for reaching out to Speedy Gonzalez. Welcome again!");
+        alert(name + ", message received, thank you for reaching out to Speedy Gonzalez. Welcome again!");
     });
 });
