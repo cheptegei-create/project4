@@ -99,7 +99,7 @@ $(document).ready(() => {
 });
 
 $(document).ready(function() {
-    $("#checkOut").onclick(function(event) {
+    $("#checkOut").click(function(event) {
         alert(name + ", message received, thank you for reaching out to Speedy Gonzalez. Welcome again!");
     });
 });

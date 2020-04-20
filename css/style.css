@@ -281,7 +281,7 @@ html {
 }
 
 .footer {
-    background: url('../images/footerimage.jpeg');
+    background: url('../images/ftimg.jpg');
 }
 
 .links {
@@ -318,5 +318,5 @@ html {
     padding: 0;
     line-height: 15px;
     text-align: center;
-    font-size: 13px;
+    font-size: 20px;
 }
