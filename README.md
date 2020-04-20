@@ -13,7 +13,7 @@ This project was created with:
 *css
 *Javascript
 ## Setup
-To run this project click on this link https://cheptegei-create.github.io/Delani-Studio/
+To run this project click on this link https://cheptegei-create.github.io/project4/
 ## Author's Name
 David Kiptoo Cheptegei
 ## Licence
