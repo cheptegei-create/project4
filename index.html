@@ -52,7 +52,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/pz0.jpg" class="d-block w-100" alt="an image of pizza">
+                    <img src="images/pz0.webp" class="d-block w-100" alt="an image of pizza">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Pizzaribba</h5>
                         <p>Speedy Gonzalez at your service!</p>
@@ -83,6 +83,46 @@
             </a>
         </div>
     </div>
+    <div class="container-fluid menu">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Menu</h2>
+                <div class="card text-center" id="menuCard">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pizzas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Drinks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Appetizers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <form id="pizza-one-form">
+                    <div class="card" id="menuItem">
+                        <div class="card-header">
+                            <h5 id="pizza-one-label">GONZALEZ SPECIAL</h5>
+                        </div>
+                        <img class="card-img-top" src="images/item0.jpg" alt="an image of menu item3" width="98%">
+                        <div class="card-footer">
+                            <div class="form-group" id="numberInput">
+                                <input type="number" class="form-control" placeholder=" 1" id="pizza-quantity" min="1" required>
+                            </div>
+
+                            <select class="form-control drop" id="size-selector" required>
+                              <option>Large</option>
+                              <option>Medium</option>
+                              <option>Small</option>
+
+                            </select>
 </body>
 
 </html>
