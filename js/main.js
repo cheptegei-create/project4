@@ -92,12 +92,42 @@ $(document).ready(() => {
         let crustType = $("#crust-selector").val();
         let delPrice = $("#delivery_type").val();
         let pizzaQuantity = Number($("#pizza-quantity").val());
-        let chickenSupreme = new Pizza(pizzaName, pizzaSize, crustType, toppingType, pizzaQuantity, delPrice, false);
-        $("#size-price").text(chickenSupreme.size + " " + chickenSupreme.type + ": " + "Ksh. " + chickenSupreme.priceBySize());
-        $("#crust-price").text(chickenSupreme.crust + ": " + "Ksh. " + chickenSupreme.crustPrice());
-        $("#toppings-price").text(chickenSupreme.toppings + " Toppings" + ": " + "Ksh. " + chickenSupreme.toppingsPrice());
-        $("#delivery-price").text("Delivery: " + chickenSupreme.deliveryPrice());
-        $("#total").text("Total: " + "Ksh. " + chickenSupreme.totalPlusDelivery());
+        let gonzalezSpecial = new Pizza(pizzaName, pizzaSize, crustType, toppingType, pizzaQuantity, delPrice, false);
+        $("#size-price").text(gonzalezSpecial.size + " " + gonzalezSpecial.type + ": " + "Ksh. " + gonzalezSpecial.priceBySize());
+        $("#crust-price").text(gonzalezSpecial.crust + ": " + "Ksh. " + gonzalezSpecial.crustPrice());
+        $("#toppings-price").text(gonzalezSpecial.toppings + " Toppings" + ": " + "Ksh. " + gonzalezSpecial.toppingsPrice());
+        $("#delivery-price").text("Delivery: " + gonzalezSpecial.deliveryPrice());
+        $("#total").text("Total: " + "Ksh. " + gonzalezSpecial.totalPlusDelivery());
+    });
+    $("#pizza-form2").submit((event) => {
+        event.preventDefault();
+        let pizzaName = $("#pizza-label2").text();
+        let pizzaSize = $("#size-selector2").val();
+        let toppingType = $("#topping-selector2").val();
+        let crustType = $("#crust-selector2").val();
+        let delPrice = $("#delivery_type2").val();
+        let pizzaQuantity = Number($("#pizza-quantity").val());
+        let beefBbq = new Pizza(pizzaName, pizzaSize, crustType, toppingType, pizzaQuantity, delPrice, false);
+        $("#size-price").text(beefBbq.size + " " + beefBbq.type + ": " + "Ksh. " + beefBbq.priceBySize());
+        $("#crust-price").text(beefBbq.crust + ": " + "Ksh. " + beefBbq.crustPrice());
+        $("#toppings-price").text(beefBbq.toppings + " Toppings" + ": " + "Ksh. " + beefBbq.toppingsPrice());
+        $("#delivery-price").text("Delivery: " + beefBbq.deliveryPrice());
+        $("#total").text("Total: " + "Ksh. " + beefBbq.totalPlusDelivery());
+    });
+    $("#pizza-form3").submit((event) => {
+        event.preventDefault();
+        let pizzaName = $("#pizza-label3").text();
+        let pizzaSize = $("#size-selector3").val();
+        let toppingType = $("#topping-selector3").val();
+        let crustType = $("#crust-selector3").val();
+        let delPrice = $("#delivery_type3").val();
+        let pizzaQuantity = Number($("#pizza-quantity").val());
+        let fetaAndVeggie = new Pizza(pizzaName, pizzaSize, crustType, toppingType, pizzaQuantity, delPrice, false);
+        $("#size-price").text(fetaAndVeggie.size + " " + fetaAndVeggie.type + ": " + "Ksh. " + fetaAndVeggie.priceBySize());
+        $("#crust-price").text(fetaAndVeggie.crust + ": " + "Ksh. " + fetaAndVeggie.crustPrice());
+        $("#toppings-price").text(fetaAndVeggie.toppings + " Toppings" + ": " + "Ksh. " + fetaAndVeggie.toppingsPrice());
+        $("#delivery-price").text("Delivery: " + fetaAndVeggie.deliveryPrice());
+        $("#total").text("Total: " + "Ksh. " + fetaAndVeggie.totalPlusDelivery());
     });
 });
 
