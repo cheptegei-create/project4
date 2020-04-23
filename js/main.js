@@ -50,8 +50,10 @@ class Pizza {
     }
 
     deliveryPrice() {
-        if (this.delivery == true) {
+        if (this.delivery == "Normal") {
             return 150;
+        } else if (this.delivery == "Emergency") {
+            return 200;
         } else {
             return 0;
         }
@@ -88,8 +90,9 @@ $(document).ready(() => {
         let pizzaSize = $("#size-selector").val();
         let toppingType = $("#topping-selector").val();
         let crustType = $("#crust-selector").val();
+        let delPrice = $("#delivery_type").val();
         let pizzaQuantity = Number($("#pizza-quantity").val());
-        let chickenSupreme = new Pizza(pizzaName, pizzaSize, crustType, toppingType, pizzaQuantity, false);
+        let chickenSupreme = new Pizza(pizzaName, pizzaSize, crustType, toppingType, pizzaQuantity, delPrice, false);
         $("#size-price").text(chickenSupreme.size + " " + chickenSupreme.type + ": " + "Ksh. " + chickenSupreme.priceBySize());
         $("#crust-price").text(chickenSupreme.crust + ": " + "Ksh. " + chickenSupreme.crustPrice());
         $("#toppings-price").text(chickenSupreme.toppings + " Toppings" + ": " + "Ksh. " + chickenSupreme.toppingsPrice());

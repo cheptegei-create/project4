@@ -20,7 +20,6 @@
           <img src="images/menu-icon.png" alt="menu icon">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand logo" href="#"><img src="images/gonzalez logo.png" alt="logo of pizza house" width="70%"></a>
         <span class="navbar-brand navbar-text"> <a href="#"></a> Pizzaribba</span>
         <div class="collapse navbar-collapse" id="collapse_target">
             <ul class="navbar-nav ml-lg-auto">
@@ -42,7 +41,6 @@
             </ul>
         </div>
     </nav>
-
     <div class="bd-example">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -85,26 +83,6 @@
     </div>
     <div class="container-fluid menu">
         <div class="row">
-            <div class="col-md-12">
-                <h2>Menu</h2>
-                <div class="card text-center" id="menuCard">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pizzas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Drinks</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Appetizers</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-sm-4">
                 <form id="pizza-form">
                     <div class="card" id="menuItem">
@@ -143,6 +121,21 @@
                                 <option>Extra Jalapenos</option>
                                 <option>Extra Olives</option>
                               </select>
+                            <select class="form-control drop" id="delivery_type" required>
+                                    <option> Delivery Type - </option>
+                                    <option> Normal </option>
+                                    <option> Emergency </option>
+                                </select>
+                            <select class="form-control drop" id="delivery_area" required>
+                                    <option value="0"> Select Delivery Area ... </option>
+                                    <option value="1"> Ngong </option>
+                                    <option value="2"> Kiserian </option>
+                                    <option value="3"> Karen  </option>
+                                    <option value="4"> Vetenary </option>
+                                    <option value="5"> Kerarapon  </option>
+                                    <option value="6"> Lenana  </option>
+                                    <option value="7"> Racecourse </option>
+                                </select>
                             <button type="sumbit" class="btn btn-primary" id="checkout">Select</button>
                         </div>
                     </div>
